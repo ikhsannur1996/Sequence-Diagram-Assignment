@@ -40,20 +40,6 @@ Below are detailed steps for your sequence diagram:
 7. **Ride Management Service sends confirmation back to Middleware**: Confirmation of driver assignment is sent back through the middleware, including essential details like driver name and vehicle information.
 8. **Middleware returns confirmation to Mobile App**: The final confirmation is displayed in the mobile app, allowing users to see their assigned driver’s details.
 
-## Visual Representation
-
-You can represent these interactions in a sequence diagram using solid arrows for requests and dotted arrows for responses. Below is a textual representation of how your diagram might look:
-
-```
-User -> Mobile App : Clicks "Request Ride"
-Mobile App -> Middleware : Send ride request
-Middleware -> Ride Management Service : Forward request
-Ride Management Service -> Driver Management Service : Query available drivers
-Driver Management Service -> Ride Management Service : Return list of available drivers
-Ride Management Service -> Middleware : Send confirmation (driver info)
-Middleware -> Mobile App : Display confirmation
-```
-
 ## Assignment Instructions
 
 1. Create a sequence diagram using any diagramming tool (e.g., Lucidchart, Draw.io, or Microsoft Visio).
